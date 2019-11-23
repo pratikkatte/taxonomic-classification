@@ -1,0 +1,29 @@
+
+
+<button><a href="/train/">Train the model</a></button>
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Predict" />
+</form>
+
+
+{% if title %}
+  <p>Title: {{title}} </p>
+{% endif %}
+
+
+{% if description %}
+  <p>Title: {{description}} </p>
+{% endif %}
+
+{% if category %}
+  <p> Category: {{category}}</p>
+{% endif %}
+{% if subcategory %}
+  <p> Sub-category: {{subcategory}}</p>
+{% endif %}
+{% if subsubcategory %}
+  <p> sub-subcategory: {{subsubcategory}}</p>
+{% endif %}
