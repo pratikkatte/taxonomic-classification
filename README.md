@@ -19,3 +19,5 @@ python manange.py migrate
 ```
 python manage.py runserver
 ```
+
+### trained models and data are stored in media directory.
