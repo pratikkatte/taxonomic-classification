@@ -49,8 +49,9 @@ def TrainView(request):
                 os.remove(os.path.join("media/data", data_file.name))
 
             fs.save('data/'+data_file.name, data_file)
-
+            print(train_on)
             if train_on == 'new_model':
+
                 start_training(data_file.name, model_name)
             else:
                 train_existing(data_file.name, model_name, train_on)

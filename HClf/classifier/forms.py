@@ -15,6 +15,6 @@ class trainForm(forms.Form):
     model_name = forms.CharField()
     all_models = TrainModel.objects.all()
     all_model_names = [(model.model_name, model.model_name) for model in all_models]
-    all_model_names = [('new model','new model')] + all_model_names
+    all_model_names = [('new_model','new model')] + all_model_names
 
     train_on = forms.CharField(widget=forms.Select(choices=all_model_names))
